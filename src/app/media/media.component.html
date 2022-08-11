@@ -1,0 +1,23 @@
+<form>
+  <p>
+    <label for="b1">Bimestre 1 </label>
+    <input id="b1" name="b1" type="number" [(ngModel)]="boletim.bim1" />
+  </p>
+  <p>
+  <label for="b2">Bimestre 2 </label>
+  <input id="b2" name="b2" type="number" [(ngModel)]="boletim.bim2" />
+  </p>
+  <p>
+  <label for="b3">Bimestre 3 </label>
+  <input id="b3" name="b3" type="number" [(ngModel)]="boletim.bim3" />
+  </p>
+  <p>
+  <label for="b4">Bimestre 4 </label>
+  <input id="b4" name="b4" type="number" [(ngModel)]="boletim.bim4" />
+  </p>
+</form>
+
+<input type="button" value="Calcular" (click)="calcular()" /> <br>
+
+<h2> {{this.aprovacao}} com média de {{this.resultado}} </h2>
+
